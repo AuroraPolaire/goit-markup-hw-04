@@ -130,11 +130,29 @@ header {
   color: var(--paragraph-color);
 }
 
+.mail-to,
+.phone-to {
+  display: flex;
+  align-items: center;
+}
+
+.envelope-icon {
+  margin-right: 10px;
+}
+
+.phone-icon {
+  margin-right: 10px;
+}
+
 .navigation a:hover,
 .navigation a:focus,
 .contacts a:hover,
 .contacts a:focus {
   color: var(--accent-color);
+}
+
+a .envelope-icon:hover {
+  fill: #2196f3;
 }
 
 .active .link {
@@ -205,6 +223,14 @@ header {
   justify-content: center;
 }
 
+.icon-block {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  text-align: center;
+}
+
 .special-section-heading {
   font-weight: 700;
   font-size: 14px;
@@ -263,6 +289,8 @@ header {
 
 .our-team-section .item {
   background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -292,11 +320,37 @@ header {
 
 .team-job {
   margin-top: 10px;
+  margin-bottom: 16px;
 
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--paragraph-color);
+}
+
+.social-nets-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-nets-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-nets-icons-list:hover {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
+.social-nets-icons-list:hover .social-nets-icon {
+  fill: #ffffff;
 }
 
 /* Footer */
