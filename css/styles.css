@@ -151,8 +151,11 @@ header {
   color: var(--accent-color);
 }
 
-a .envelope-icon:hover {
-  fill: #2196f3;
+.contacts-link:hover .envelope-icon,
+.contacts-link:focus .envelope-icon,
+.phone-link:hover .phone-icon,
+.phone-link:focus .phone-icon {
+  fill: var(--accent-color);
 }
 
 .active .link {
@@ -349,8 +352,30 @@ a .envelope-icon:hover {
   border-radius: 50%;
 }
 
+.social-nets-icon {
+  fill: #afb1b8;
+}
+
 .social-nets-icons-list:hover .social-nets-icon {
   fill: #ffffff;
+}
+
+.client-box-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.client-box {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 /* Footer */
