@@ -104,8 +104,15 @@ header {
 
 .contacts {
   display: flex;
+  align-items: center;
   padding-left: 0px;
   margin-left: auto;
+}
+
+.contacts-link,
+.phone-link {
+  display: block;
+  align-items: center;
 }
 
 .navigation a,
@@ -124,16 +131,10 @@ header {
 }
 
 .contacts a {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--paragraph-color);
-}
-
-.mail-to,
-.phone-to {
-  display: flex;
-  align-items: center;
 }
 
 .envelope-icon {
@@ -165,13 +166,20 @@ header {
 /* Hero/main section */
 .hero {
   text-align: center;
-}
-
-.dark-background {
   padding-top: 200px;
   padding-bottom: 210px;
-  background-color: var(--background-color-dark);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  max-width: 1600рх;
+  height: 600px;
+  background-color: #c4c4c4;
 }
+
 .main-heading {
   margin-bottom: 30px;
   width: 696px;
@@ -360,6 +368,8 @@ header {
   fill: #ffffff;
 }
 
+/* Clients section */
+
 .client-box-list {
   display: flex;
   justify-content: center;
@@ -376,6 +386,20 @@ header {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.client-box:hover {
+  border: 1px solid #2196f3;
+}
+
+.client-box:hover .client-icon {
+  fill: var(--accent-color);
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
 }
 
 /* Footer */
