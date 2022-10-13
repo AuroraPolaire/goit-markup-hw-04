@@ -404,15 +404,15 @@ header {
 
 /* Footer */
 
-.footer-section {
-  display: flex;
-  gap: 70px;
-  padding: 60px 0px;
-
+.footer {
   background-color: var(--background-color-dark);
 }
 
 .footer-container {
+  display: flex;
+  gap: 70px;
+  width: 1200px;
+  padding: 60px 0px;
   margin-left: 215px;
 }
 
