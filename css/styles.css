@@ -405,6 +405,8 @@ header {
 /* Footer */
 
 .footer-section {
+  display: flex;
+  gap: 70px;
   padding: 60px 0px;
 
   background-color: var(--background-color-dark);
@@ -415,10 +417,8 @@ header {
 }
 
 .label-footer {
-  display: block;
-  margin-right: 0;
+  display: inline-block;
   margin-bottom: 20px;
-
   color: #fff;
 }
 
@@ -443,6 +443,25 @@ header {
 
 .mail-phone a {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-sign-up-heading {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.sign-up .social-nets-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sign-up .social-nets-icon {
+  fill: #fff;
 }
 
 /* Projects page */
