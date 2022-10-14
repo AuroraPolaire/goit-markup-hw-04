@@ -413,14 +413,13 @@ header {
 
 .footer {
   background-color: var(--background-color-dark);
+  padding: 60px 0;
 }
 
 .footer-container {
   display: flex;
+  align-items: baseline;
   gap: 70px;
-  width: 1200px;
-  padding: 60px 0px;
-  margin-left: 215px;
 }
 
 .label-footer {
