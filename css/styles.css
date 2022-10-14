@@ -503,7 +503,8 @@ header {
   margin-right: 8px;
 }
 
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
   color: #fff;
   background-color: var(--accent-color);
   border: 0px;
